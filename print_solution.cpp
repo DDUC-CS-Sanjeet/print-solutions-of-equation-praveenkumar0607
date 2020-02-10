@@ -53,10 +53,7 @@ int main()
     cout << "enter the sum(c):";
     cin >> c;
     int arr[n];
-    for (int i = 0; i < n; i++)
-    {
-        arr[i] = 0;
-    }
+    arr[n]={0};
     cout<<"the possible solution are"<<endl;
     comb(arr, n, c, 0);
     return 0;
