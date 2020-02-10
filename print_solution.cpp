@@ -10,7 +10,7 @@ void print(int *a, int n)
 }
 int sum(int *a, int n)
 {
-	int i = 0;
+    int i = 0;
     int sum = 0;
     for (i = 0; i < n; i++)
     {
@@ -18,7 +18,7 @@ int sum(int *a, int n)
     }
     return sum;
 }
-void comb(int *a, int size, int c, int index)
+void solutions(int *a, int size, int c, int index)
 {
 	    int i = 0;
     if (index < size - 1)
@@ -26,7 +26,7 @@ void comb(int *a, int size, int c, int index)
         while (i <= c)
         {
             a[index] = i;
-            comb(a, size, c, index + 1);
+            solutions(a, size, c, index + 1);
             i++;
         }
     }
@@ -55,7 +55,7 @@ int main()
     int arr[n];
     arr[n]={0};
     cout<<"the possible solution are"<<endl;
-    comb(arr, n, c, 0);
+    solutios(arr, n, c, 0);
     return 0;
 }
 
